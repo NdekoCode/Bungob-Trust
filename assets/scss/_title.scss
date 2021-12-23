@@ -1,0 +1,129 @@
+.title {
+    font-size: var(--f-sise-title);
+}
+
+.title-1 {
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    margin-bottom: 3rem;
+    font-size: 3rem;
+    font-weight: 900;
+
+    @media only screen and(max-width:420px) {
+        font-size: 2rem;
+
+    }
+
+    &::before {
+        content: '';
+        display: block;
+        margin-bottom: 30px;
+        width: 100px;
+        height: 10px;
+        position: absolute;
+        bottom: -20%;
+        color: var(--color-green);
+        background-color: var(--color-green);
+        margin-bottom: 1rem;
+
+        @media only screen and(min-width:320px) {
+            bottom: -15%;
+        }
+
+    }
+}
+
+.title-2 {
+    font-size: 2.5rem;
+}
+
+.title-3 {
+    font-size: 2rem;
+}
+
+.title-4 {
+    font-size: 1.6rem;
+}
+
+.title-5 {
+    font-size: 1.4rem;
+}
+
+.title-6 {
+    font-size: 1.2rem;
+}
+
+.title_line {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+
+    &::before {
+        content: '';
+        display: block;
+        margin-bottom: 30px;
+        width: 40px;
+        height: 10px;
+        position: absolute;
+        top: -10%;
+        color: var(--color-green);
+        background-color: var(--color-green);
+
+        @media only screen and(max-width:420px) {
+            top: -25%;
+        }
+
+    }
+}
+
+.text_line-center {
+    width: 100%;
+    // justify-content: center;
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: -10%;
+        left: 50%;
+        transform: translateX(-50%);
+
+    }
+
+}
+
+.text_line-left {
+
+    justify-content: flex-start;
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+
+    }
+
+}
+
+@media only screen and (min-width: 992px) {
+
+    .title-1 {
+        font-size: 4.5rem;
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media only screen and(max-width:950px) {
+
+    .causes-details {
+
+        .title-1::before {
+            bottom: -25%;
+        }
+    }
+}

@@ -1,0 +1,137 @@
+.card {
+
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.15);
+    background-color: #fff;
+
+    .card-body,
+    .card-header,
+    .card-footer {
+        padding: 1rem;
+        background-color: #fff;
+    }
+
+    .card-img {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+    }
+}
+
+.how-help {
+    padding: 2rem 0;
+    margin-top: 10rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .card-title {
+        margin-top: 3rem;
+    }
+
+
+}
+
+.card-header {
+    background-color: transparent;
+    border: none;
+}
+
+.card-group {
+    background-color: #fff;
+    text-align: center;
+    width: auto;
+    position: relative;
+    margin: 0 0.5rem;
+    transition: box-shadow 0.3s;
+    margin-bottom: 4rem;
+    flex-flow: column wrap;
+
+    border: none;
+
+    &:hover {
+        box-shadow: 0 4px 20px rgba(34, 68, 123, 0.1);
+
+        .card-icon img {
+            transform: rotate(360deg);
+        }
+    }
+
+    @media screen and(max-width:540px) {
+        &:not(:last-child) {
+
+            margin-bottom: 8rem;
+        }
+    }
+}
+
+.card-icon {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    z-index: 1;
+    top: -30%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.15);
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media only screen and(max-width:990px) {
+        top: -18%;
+    }
+
+    @media only screen and(max-width:540px) {
+        top: -35%;
+    }
+
+    img {
+        max-width: 50px;
+        height: auto;
+        display: block;
+        transition: 0.3s;
+    }
+
+}
+
+@media only screen and (min-width:540px) {
+    .how-help {
+        flex-wrap: nowrap;
+    }
+
+    .card-group {
+
+        margin-bottom: initial;
+
+    }
+}
+
+.make-help {
+
+    .title-1::before {
+        bottom: -50%;
+
+    }
+
+    @media only screen and (min-width: 540px) {
+
+        .how-help {
+            flex-wrap: nowrap;
+            justify-content: center;
+            margin-bottom: 10rem;
+
+            .card-group {
+                flex-basis: 45%;
+                width: max-content;
+            }
+        }
+    }
+}

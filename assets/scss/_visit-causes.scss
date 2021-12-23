@@ -1,0 +1,298 @@
+@import "how_help";
+
+.causes-areas {
+    background-color: #EEFFFA;
+    display: flex;
+    align-items: center;
+    background: url('../img/waves/square-back.svg') no-repeat center center /cover;
+
+    @media only screen and(max-width:950px) {
+        flex-direction: column;
+
+        .causes-offers {
+            height: 500px;
+            width: 100%;
+        }
+
+        .causes-details {
+            order: -1;
+            height: auto;
+            width: 100%;
+
+            .title-1::before {
+                bottom: -25%;
+            }
+        }
+    }
+
+    @media #{$md} {
+
+        .causes-details {
+
+
+            @media #{$lg} {
+                width: 53%;
+                padding: 47px 20px 0px 50px;
+                height: auto;
+                order: -1;
+                height: auto;
+            }
+        }
+
+    }
+
+    // left Contents
+    .causes-details {
+        width: 65%;
+        padding: 20px 20px 20px 60px;
+
+        height: 650px;
+
+        background: linear-gradient(45deg, rgba(28, 28, 28, 0.9), rgba(28, 28, 28, 0.7)), url('../img/causes/agro-pastoral-question.jpg') no-repeat center center /cover;
+
+        @media #{$laptop} {
+            width: 45%
+        }
+
+        @media #{$md} {
+            width: 100%;
+            padding: 50px 30px;
+            height: auto;
+
+            .title-1 {
+                width: 65%;
+            }
+        }
+
+        @media #{$sm} {
+            width: 100%;
+            padding: 51px 20px 6px 20px;
+        }
+
+        @media #{$xs} {
+            width: 100%;
+            padding: 51px 20px 6px 20px;
+        }
+
+
+        h2 {
+            font-size: 55px;
+            display: block;
+            font-weight: 400;
+            line-height: 1.2;
+            margin-bottom: 40px;
+            // width: 75%;
+
+            @media #{$laptop} {
+                font-size: 35px;
+            }
+
+            @media #{$lg} {
+                font-size: 35px;
+            }
+
+            @media #{$sm} {
+                font-size: 50px;
+            }
+
+            @media #{$xs} {
+                font-size: 27px;
+            }
+        }
+
+        p {
+            line-height: 1.7;
+            font-size: 18px;
+        }
+
+        p.pera-bottom {
+            margin-bottom: 41px;
+
+            @media #{$xs} {
+                font-size: 15px;
+            }
+
+            @media #{$sm} {
+                font-size: 13px;
+            }
+        }
+
+        .footer-tittles {
+            h2 {
+                font-size: 57px;
+                font-weight: 400;
+                font-size: 45px;
+
+                @media #{$sm} {
+                    font-size: 13px;
+                }
+
+                @media #{$xs} {
+                    font-size: 31px;
+                }
+
+            }
+
+            p {
+                padding-bottom: 22px;
+                color: #1D2547;
+                font-size: 16px;
+            }
+        }
+
+    }
+
+    // -Right Contents
+    .causes-offers {
+        background-image: url(../img/causes/agriculture.jpg);
+        background-size: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: 650px;
+        width: 55%;
+
+        @media #{$lg} {
+            height: 769px;
+            width: 61%;
+        }
+
+        @media #{$xs} {
+            width: 100%;
+            height: 400px;
+        }
+
+        @media #{$md} {
+            width: 100%;
+            height: 550px;
+        }
+
+        @media #{$sm} {
+            width: 100%;
+            height: 500px;
+        }
+
+
+    }
+}
+
+.causes-details {
+    color: var(--color-white);
+
+    .btn-urgent {
+        width: max-content;
+        padding: 0.5rem 1rem;
+        display: block;
+        background-color: #2e2e2e;
+        border-radius: 2px;
+        color: var(--color-white);
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+        transition: color 0.3s, background-color 0.3s;
+
+        &:hover {
+            background-color: var(--color-white);
+            color: #2e2e2e;
+        }
+    }
+
+    p {
+        color: rgba(255, 255, 255, 0.8);
+    }
+
+    .btn-learn {
+        border-color: var(--color-white);
+        color: var(--color-white);
+
+        &:hover {
+            background-color: var(--color-white);
+            color: #2e2e2e !important;
+        }
+    }
+
+    * {
+        color: inherit;
+    }
+
+
+    .causes-describe {
+
+        padding: 2rem 1rem;
+        order: -1;
+        // margin-bottom: 2rem;
+        background: linear-gradient(45deg, rgba(28, 28, 28, 0.9), rgba(28, 28, 28, 0.7)), url('../img/causes/agro-pastoral-question.jpg') no-repeat center center /cover;
+    }
+
+    .title-1 {
+        font-size: 3rem !important;
+        font-weight: 900 !important;
+
+        &::before {
+            bottom: -10%;
+
+        }
+    }
+}
+
+
+.cause__img {
+    background: linear-gradient(45deg, rgba(28, 28, 28, 0.5), rgba(28, 28, 28, 0.3));
+    height: 100%;
+    overflow: hidden;
+
+    img {
+        display: block;
+        max-width: auto;
+        height: 100%;
+
+    }
+}
+
+.cause-title {
+    span {
+        color: var(--color-green) !important;
+    }
+}
+
+.urgent-cause {
+    margin: 4rem 0;
+
+    .btn-learn {
+        font-size: rem(20);
+        text-transform: uppercase;
+    }
+}
+
+@media only screen and (min-width:768px) {
+
+    .causes-describe {
+        order: initial;
+        padding-left: 4rem;
+
+        span {
+            display: inline;
+        }
+
+
+
+        .title-1 {
+
+            font-size: 2rem !important;
+        }
+
+
+        .block {
+            height: 605px;
+        }
+    }
+}
+
+@media only screen and (min-width:950px) {
+    .causes-details {
+
+        .title-1 {
+
+            font-size: 4.6rem !important;
+        }
+    }
+}
