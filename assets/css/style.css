@@ -3258,6 +3258,17 @@ a:focus,
     bottom: -65%;
   }
 }
+@media only screen and (max-width: 995px) {
+  .learning .title-1::after {
+    bottom: -30%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .learning .title-1::after {
+    bottom: -45%;
+    display: none;
+  }
+}
 .learning .title-1::before {
   display: none;
 }

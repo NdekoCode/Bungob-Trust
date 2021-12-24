@@ -98,6 +98,14 @@
                 bottom: -65%;
             }
 
+            @media only screen and(max-width:995px) {
+                bottom: -30%;
+            }
+
+            @media only screen and(max-width:768px) {
+                bottom: -45%;
+                display: none;
+            }
 
         }
 
