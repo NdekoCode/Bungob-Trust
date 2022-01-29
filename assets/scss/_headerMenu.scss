@@ -15,9 +15,14 @@
         box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
     }
 
+    a{
+        font-family: $font-link;
+        font-size: 15px;
+    }
     .header-bottom {
         // header left right side padding
         padding: 0px 85px;
+        font-weight: 700;
 
         .nav__link {
             font-size: var(--font-medium) !important;
@@ -74,11 +79,8 @@
 
                 a {
                     color: #072366;
-                    font-weight: 400;
-                    padding: 27px 19px;
+                    padding: 10px 15px;
                     display: block;
-                    font-size: 1em;
-                    font-weight: 500;
                     @include transition(.3s);
                     text-transform: capitalize;
 
@@ -189,7 +191,9 @@
 .header__infos-contact {
     background-color: #072366;
     padding: 1rem 0;
-
+.infos__contact{
+    margin-bottom:0;
+}
     .list__social-icon {
         justify-content: flex-end;
     }
@@ -209,13 +213,13 @@
 }
 
 .list_contact {
-    justify-content: space-around;
     align-items: center;
 
     li {
         color: $white;
         font-size: 12px;
-        font-weight: 300;
+        font-weight: 400;
+        margin:5px 10px;
     }
 }
 

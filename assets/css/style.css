@@ -99,7 +99,7 @@
   color: var(--first-color) !important;
   display: inline-block;
   padding: 18px 44px;
-  font-family: "Poppins", "Segoe UI", sans-serif;
+  font-family: "Trebuchet MS", "Segoe UI", sans-serif;
   font-size: 14px;
   font-weight: 400;
   border: 0;
@@ -192,7 +192,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Poppins", "Segoe UI", sans-serif;
+  font-family: "Trebuchet MS", "Segoe UI", sans-serif;
   color: #425140;
   margin-top: 0px;
   font-style: normal;
@@ -2864,8 +2864,13 @@ a:focus,
     box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
   }
 }
+.header-area a {
+  font-family: "Arial", "Segoe UI", "Roboto", sans-serif;
+  font-size: 15px;
+}
 .header-area .header-bottom {
   padding: 0px 85px;
+  font-weight: 700;
 }
 .header-area .header-bottom .nav__link {
   font-size: var(--font-medium) !important;
@@ -2921,11 +2926,8 @@ a:focus,
 }
 .main-header .main-menu ul li a {
   color: #072366;
-  font-weight: 400;
-  padding: 27px 19px;
+  padding: 10px 15px;
   display: block;
-  font-size: 1em;
-  font-weight: 500;
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
   -o-transition: 0.3s;
@@ -3023,6 +3025,9 @@ a:focus,
   background-color: #072366;
   padding: 1rem 0;
 }
+.header__infos-contact .infos__contact {
+  margin-bottom: 0;
+}
 .header__infos-contact .list__social-icon {
   justify-content: flex-end;
 }
@@ -3036,13 +3041,13 @@ a:focus,
 }
 
 .list_contact {
-  justify-content: space-around;
   align-items: center;
 }
 .list_contact li {
   color: #ffffff;
   font-size: 12px;
-  font-weight: 300;
+  font-weight: 400;
+  margin: 5px 10px;
 }
 
 .infos__social {
@@ -4266,7 +4271,7 @@ a:focus,
   color: #fff;
   text-transform: uppercase;
   font-weight: 400;
-  font-family: "Poppins", "Segoe UI", sans-serif;
+  font-family: "Trebuchet MS", "Segoe UI", sans-serif;
   line-height: 1.2;
 }
 @media (max-width: 575px) {
@@ -4831,7 +4836,7 @@ a:focus,
   color: #3a3a3a;
   text-transform: uppercase;
   font-size: 14px;
-  font-family: "Poppins", "Segoe UI", sans-serif;
+  font-family: "Trebuchet MS", "Segoe UI", sans-serif;
   color: #3a3a3a;
 }
 .home-blog-area .home-blog-single .blog-img-cap .blog-cap .more-btn:hover {
@@ -4857,7 +4862,7 @@ a:focus,
 }
 
 .blog_area a {
-  color: "Poppins", "Segoe UI", sans-serif !important;
+  color: "Trebuchet MS", "Segoe UI", sans-serif !important;
   text-decoration: none;
   transition: 0.4s;
 }
@@ -6046,7 +6051,7 @@ a:focus,
   color: #fff;
   font-weight: 900;
   margin-bottom: 0;
-  font-family: "Poppins", "Segoe UI", sans-serif;
+  font-family: "Trebuchet MS", "Segoe UI", sans-serif;
   text-transform: capitalize;
 }
 @media (max-width: 767px) {
